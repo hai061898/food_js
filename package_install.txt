@@ -1,0 +1,10 @@
+npm install express
+npm install express-validator
+npm install bcrypt
+npm install jsonwebtoken
+npm install fs-extra
+npm install --save multer
+npm install mysql
+npm install socket.io
+npm install dotenv
+npm install --save-dev nodemon
