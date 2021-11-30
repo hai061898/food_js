@@ -3,7 +3,7 @@ import path from "path";
 
 var storageProfile = multer.diskStorage({
   destination: (req, res, cb) => {
-    cb(null, "src/Uploads/Profile");
+    cb(null, "src/uploads/profile");
   },
   filename: (req, file, cb) => {
     cb(null, file.filedname + "-" + Date.now + path.extname(file.originalname));
@@ -14,7 +14,7 @@ export const upLoadsProfile = multer({ storage: storageProfile });
 
 var storageProducts = multer.diskStorage({
   destination: (req, res, cb) => {
-    cb(null, "src/Uploads/Products");
+    cb(null, "src/uploads/products");
   },
   filename: (req, file, cb) => {
     cb(
