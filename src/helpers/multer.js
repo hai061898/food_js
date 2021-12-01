@@ -1,13 +1,16 @@
 import multer from "multer";
 import path from "path";
 
+
 var storageProfile = multer.diskStorage({
-  destination: (req, res, cb) => {
-    cb(null, "src/uploads/profile");
+
+  destination: ( req, res, cb ) => {
+      cb( null, 'src/uploads/profile')
   },
   filename: (req, file, cb) => {
-    cb(null, file.filedname + "-" + Date.now + path.extname(file.originalname));
-  },
+      cb( null, file.fieldname + '-' + Date.now() + path.extname( file.originalname ))
+  }
+
 });
 
 export const upLoadsProfile = multer({ storage: storageProfile });

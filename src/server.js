@@ -8,6 +8,7 @@ import routerUser from "./router/user_routes";
 config();
 const app = express();
 const __dirname = path.resolve();
+
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 
