@@ -5,6 +5,7 @@ import path from 'path';
 
 import routerUser from "./router/user_routes";
 import routeAuth from './router/auth_routes';
+import routerCategory from './router/category_routes';
 
 config();
 const app = express();
@@ -15,6 +16,7 @@ app.use(express.urlencoded({ extended: false }));
 
 app.use('/api', routerUser);
 app.use('/api', routeAuth);
+app.use('/api', routerCategory);
 
 app.use( express.static( path.join( __dirname, 'uploads/profile' )));
 
