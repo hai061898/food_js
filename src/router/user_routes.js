@@ -7,7 +7,7 @@ import { verifyToken } from '../middleware/validateToken';
 
 const router = Router();
 
-router.post('/register-client', upLoadsProfile.single('imagePath'), register.registerClient);
+router.post('/register-client', upLoadsProfile.single('image'), register.registerClient);
 router.post('/register-delivery', [ verifyToken, upLoadsProfile.single('image') ], register.registerDelivery );
 
 router.get('/get-user-by-id', verifyToken, user.getUserById);
