@@ -1,6 +1,6 @@
 import { Router } from 'express';
 import * as register from '../controllers/register_controller'
-import * as user from '../controller/userController';
+import * as user from '../controllers/user_controller';
 import { upLoadsProfile } from '../helpers/multer';
 import { verifyToken } from '../middleware/validateToken';
 

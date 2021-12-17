@@ -2,7 +2,7 @@ import { response } from "express";
 import bcrypt from "bcrypt";
 import fs from "fs-extra";
 import path from "path";
-import pool from "../database/database";
+import pool from '../database/database';
 
 export const getUserById = async (req, res = response) => {
   try {
